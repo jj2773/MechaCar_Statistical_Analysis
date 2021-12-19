@@ -106,6 +106,16 @@ plt <- ggplot(coils_df,aes(x=Manufacturing_Lot,y=PSI))
 plt+geom_boxplot()
 geom_point()
 
+####################################################
+## Deliverable 3  T-Tests on Suspension Coils
+####################################################
+# 
+t.test(coils_df$PSI,mu=1500) #t test the entire dataset
 
+lot1_df <- coils_df[coils_df$Manufacturing_Lot=='Lot1',]
+lot2_df <- coils_df[coils_df$Manufacturing_Lot=='Lot2',]
+lot3_df <- coils_df[coils_df$Manufacturing_Lot=='Lot3',]
 
-
+t.test(lot1_df$PSI,mu=1500) #t test the lot 1
+t.test(lot2_df$PSI,mu=1500) #t test the lot 2
+t.test(lot3_df$PSI,mu=1500) #t test the lot 3

@@ -36,9 +36,17 @@ To get a further understanding of the statistics by the three different lots mad
 
 ![alt text](https://github.com/jj2773/MechaCar_Statistical_Analysis/blob/main/deliverable2_lot_summary.png)
 
-The total summary statistics shows that the coil springs have a variance less than the required 100 psi.  However, 
-the lot summary indicates that lot 3 has a variance greater than 100 psi. The variance measures how far the data set is spread out and is calculated as the average of the squared differences from the mean.  From plotting the distribution for each lot this is also observed.  Currently the manufacturing data meets the desired variance as a whole, but if lot 3 is coming from a particular machine and the volume is shifted coil springs could then shift as a whole to not be meeting specifications.
+The total summary statistics shows that the coil springs have a variance less than the required 100 psi^2.  However, 
+the lot summary indicates that lot 3 has a variance greater than 100 psi^2. The variance measures how far the data set is spread out and is calculated as the average of the squared differences from the mean.  From plotting the distribution for each lot this is also observed.  Currently the manufacturing data meets the desired variance as a whole, but if lot 3 is coming from a particular machine and the volume is shifted coil springs could then shift as a whole to not be meeting specifications.
 
 ![alt text](https://github.com/jj2773/MechaCar_Statistical_Analysis/blob/main/deliverable2_densityplot.png)
+
+
+## T-Tests on Suspension Coils
+It is desired to perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
+
+Using the t.test function in R with a population mean of 1500 we can see from the image below that only lot 3 is statistically different with a p-value less than 0.05.
+
+![alt text](https://github.com/jj2773/MechaCar_Statistical_Analysis/blob/main/deliverable3_ttest_summary.png)
 
 
