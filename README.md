@@ -49,4 +49,13 @@ Using the t.test function in R with a population mean of 1500 we can see from th
 
 ![alt text](https://github.com/jj2773/MechaCar_Statistical_Analysis/blob/main/deliverable3_ttest_summary.png)
 
+## Study Design: MechaCar vs Competition
+A statistical study on MechaCar performance against the competition could be on average fuel economy performance per pound of weight. Heavier cars will likely stand up to crash testing better due to the laws of conservation of momentum while mass also adds to ride comfort.  MechaCar needs to show a significantly better fuel economy per pound of vehicle to establish market gains.  
+
+The metrics to be tested are the average mpg per pound of vehicle and sales. The hypothesis would be that MechaCar is statistically better for mpg per vehicle weight than the competition.  The null hypothesis would be that there is no statistical difference between MechaCar's mpg per pound than the competition.  While the alternate hypothesis would say that there is somewhat better mpg per pound for MechaCar (maybe vehicle type specific SUV, Compact, etc).  
+
+To perform this testing a t-test could be done for MechaCar and the some competitor vehicles.  The data required would be weight and average mpg for each vehicle be produced.  If the p-value is low from the t-test then the the null hypothesis would be rejected.  
+
+
+
 
