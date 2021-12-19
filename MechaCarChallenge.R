@@ -1,5 +1,9 @@
 library(dplyr)
 
+####################################################
+## Deliverable 1 MechaCar MPG Analysis
+####################################################
+
 # The MechaCar_mpg.csv dataset contains mpg test results for 50 prototype 
 # MechaCars. 
 
@@ -72,4 +76,36 @@ slope_grd_clear <- model$coefficients['ground_clearance']
 
 # multiple linear regression model formula becomes
 # mpg=-91.6+6.08*vehicle_length+3.57*ground_clearance
+
+####################################################
+## Deliverable 2 Suspension Coil Analysis
+####################################################
+# first import csv file for the suspension coils
+coils_df <- read.csv('Suspension_Coil.csv',check.names=F,stringsAsFactors=F)
+
+# examine the data
+head(coils_df)
+
+total_summary <- coils_df %>% 
+  summarize(Mean=mean(PSI),Median=median(PSI),
+            Variance=var(PSI),SD=sd(PSI),.groups='keep')
+
+lot_summary <- coils_df %>% group_by(Manufacturing_Lot) %>%
+  summarize(Mean=mean(PSI),Median=median(PSI),
+            Variance=var(PSI),SD=sd(PSI),.groups='keep')
+
+library(tidyverse)
+
+#check data to see distribution overall
+ggplot(coils_df,aes(PSI,color=Manufacturing_Lot))+geom_density()
+
+
+# create a scatter plot of the data just for fun
+plot.new()
+plt <- ggplot(coils_df,aes(x=Manufacturing_Lot,y=PSI))
+plt+geom_boxplot()
+geom_point()
+
+
+
 
