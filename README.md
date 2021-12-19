@@ -45,7 +45,7 @@ the lot summary indicates that lot 3 has a variance greater than 100 psi^2. The 
 ## T-Tests on Suspension Coils
 It is desired to perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
-Using the t.test function in R with a population mean of 1500 we can see from the image below that only lot 3 is statistically different with a p-value less than 0.05.
+Using the t.test function in R with a population mean of 1500 we can see from the image below that only lot 3 is statistically different with a p-value less than 0.05 while the overall and lots 1 and 2 pass the t-test.
 
 ![alt text](https://github.com/jj2773/MechaCar_Statistical_Analysis/blob/main/deliverable3_ttest_summary.png)
 
