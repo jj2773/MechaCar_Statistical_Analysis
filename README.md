@@ -12,7 +12,7 @@ that provide a non-random amount of variance to the mpg values are vehicle_lengt
 and ground_clearance as seen by the low Pr(<|t|) values.  
 
 
-![alt text](https://github.com/jj2773/MechaCar_Statistical_Analysis/blob/main/deliverable1_summarystats.PNG)
+![alt text](https://github.com/jj2773/MechaCar_Statistical_Analysis/blob/main/deliverable1_summarystats.png)
 
 The mpg multiple regression model thus can be represented by:
 mpg = 6.08 * vehicle_length + 3.57 * ground_clearance - 91.6
